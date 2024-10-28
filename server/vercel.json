@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "name": "asses",
+    "builds": [
+       { "src": "server.ts", "use": "@vercel/node" }
+    ],
+
+    "routes": [
+       { "src": "/(.*)", "dest": "/server.ts"}
+    ]
+ }

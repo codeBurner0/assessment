@@ -9,6 +9,7 @@
     "skipLibCheck": true,
     "strict": true,
     "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
     "emitDecoratorMetadata": true
   },
   "include": ["src/**/*"]
