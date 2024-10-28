@@ -33,9 +33,9 @@ function CreateContact() {
 
   const location = useLocation()
   useEffect(() => {
-    // if(!isAuthenticated){
-    //   navigate('/without')
-    // }
+    if(!isAuthenticated){
+      navigate('/without')
+    }
 
     if (location.state) {
       setUpdating(location.state.bool)
@@ -63,7 +63,7 @@ function CreateContact() {
       if (imageUrl.length === 0) {
         setImageUrl('')
       }
-      let result = await fetch('http://localhost:5000/api/contacts', {
+      let result = await fetch('https://assessment-zyub.vercel.app/api/contacts', {
         method: 'post',
         body: JSON.stringify({
           name,
@@ -90,7 +90,7 @@ function CreateContact() {
 
   async function updateContact() {
     let result = await fetch(
-      `http://localhost:5000/api/contacts/${contactId}`,
+      `https://assessment-zyub.vercel.app/api/contacts/${contactId}`,
       {
         method: 'put',
         body: JSON.stringify({

@@ -181,7 +181,7 @@
 
 @media screen and (max-width:990px) {
     .card_container {
-        width: 35vw;
+        width: 30vw;
         filter: drop-shadow(10px 10px 10px rgba(29, 28, 28, 0.423));
     }
 
@@ -196,12 +196,14 @@
     }
 
     .read {
-        right: 3vw;
+        /* right: 3vw; */
+        right: 16vw;
         bottom: 1.1vw;
     }
 
     .update {
-        margin-left: 2vw;
+        right: 8vw;
+        margin-left: 8vw;
     }
 
     .image>img {
@@ -221,6 +223,9 @@
         height: 13vw;
         left: -7.3vw;
     }
+    .card__footer{
+        top: -14.5vw;
+    }
 
 }
 
@@ -238,13 +243,13 @@
     }
 
     .read {
-        right: 3vw;
+        right: 10vw;
         bottom: 1.5vw;
 
     }
 
     .update {
-        margin-left: 2vw;
+        margin-left: 8vw;
     }
 
     .ImageIcon {
@@ -252,6 +257,10 @@
         height: 13vw;
         top: 1.6vw;
         left: -5.5vw;
+    }
+
+    .card__footer{
+        top: -20.5vw;
     }
 
     .image>img {

@@ -15,7 +15,7 @@ function Card({ search }) {
   }, [])
 
   const caller = async () => {
-    let result = await fetch('http://localhost:5000/api/contacts')
+    let result = await fetch('https://assessment-zyub.vercel.app/api/contacts')
     result = await result.json()
     console.log(result.data, 'ankit')
     setContact(result.data)
@@ -25,7 +25,7 @@ function Card({ search }) {
 
   async function Delete(id) {
     console.log(id)
-    let result = await fetch(`http://localhost:5000/api/contacts/${id}`, {
+    let result = await fetch(`https://assessment-zyub.vercel.app/api/contacts/${id}`, {
       method: 'delete',
     })
     navigate(0)

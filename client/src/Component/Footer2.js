@@ -158,21 +158,15 @@ function Footer2() {
 
                 <div class="footer-left">
 
-                    <h3>Blog<span>Fusion</span></h3>
+                    <h3>Sync<span>Up</span></h3>
 
                     <p class="footer-links">
-                        <a href="#" class="link-1" onClick={()=>navigate('/')}>Home</a>
+                        <a href="#" class="link-1" onClick={()=>navigate('/contacts')}>Contacts</a>
 
-                        <a href="#" onClick={()=>navigate('/Blogs')}>Blog</a>
-
-                        <a href="#" onClick={()=>navigate('/createblog')}>createBlog</a>
-
-                        <a href="#" onClick={()=>navigate('/about')}>About</a>
-
-                        <a href="#" onClick={()=>navigate('/contact')}>Contact</a>
+                        <a href="#" onClick={()=>navigate('/createContact')}>AddContacts</a>
                     </p>
 
-                    <p class="footer-company-name">BlogFusion ankit© 2022</p>
+                    <p class="footer-company-name">SyncUp ankit© 2022</p>
                 </div>
 
                 <div class="footer-center">
@@ -189,7 +183,7 @@ function Footer2() {
 
                     <div>
                         <i class="fa fa-envelope"></i>
-                        <p><a href="mailto:ankit.anand.fullstackdeveloper@gmail.com">support@blogfusion.com</a></p>
+                        <p><a href="mailto:ankit.anand.fullstackdeveloper@gmail.com">support@syncup.com</a></p>
                     </div>
 
                 </div>
@@ -197,10 +191,8 @@ function Footer2() {
                 <div class="footer-right">
 
                     <p class="footer-company-about">
-                        <span>About the company</span>
-                        BlogFusion is your
-                        all-in-one platform designed to empower writers and make storytellers to shine
-                        on a global stage.
+                        <span>About the SyncUp</span>
+                        Effortlessly track, store, and manage your valuable connections.
                     </p>
 
                     <div class="footer-icons">
