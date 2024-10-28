@@ -79,9 +79,8 @@ export const searchContacts = async (req: Request, res: Response) => {
   try {
     const contacts = await contactRepository
       .createQueryBuilder('contact')
-      .where('(contact.firstName LIKE :query OR contact.lastName LIKE :query OR contact.email LIKE :query)', { query: `%${query}%` })
-      .andWhere('contact.isDeleted = false')
-      .orderBy('contact.firstName', 'ASC')
+      .where('(contact.name LIKE :query)', { query: `%${query}%` })
+      .orderBy('contact.name', 'ASC')
       .getMany();
 
     res.json(contacts);
