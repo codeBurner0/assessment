@@ -239,17 +239,17 @@
     .card {
         width: 22vw;
         right: 4.5vw;
-        top: 7vw;
+        top: 2vw;
     }
 
     .read {
-        right: 10vw;
+        right: 12vw;
         bottom: 1.5vw;
 
     }
 
     .update {
-        margin-left: 8vw;
+        margin-left: 10vw;
     }
 
     .ImageIcon {
