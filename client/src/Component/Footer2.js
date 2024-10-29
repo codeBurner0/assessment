@@ -166,7 +166,7 @@ function Footer2() {
                         <a href="#" onClick={()=>navigate('/createContact')}>AddContacts</a>
                     </p>
 
-                    <p class="footer-company-name">SyncUp ankit© 2022</p>
+                    <p class="footer-company-name">SyncUp ankit© 2024</p>
                 </div>
 
                 <div class="footer-center">

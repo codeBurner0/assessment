@@ -272,7 +272,7 @@
 
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:420px) {
     .card_container {
         width: 72vw;
     }
@@ -289,7 +289,7 @@
         width: 14vw;
         height: 4.5vw;
         font-size: 2vw;
-        right: 5vw;
+        right: 23vw;
         bottom: 3vw;
     }
 
@@ -309,7 +309,7 @@
         height: 5vw;
         padding-top: 0.9vw;
         font-size: 3vw;
-        margin-left: 3.8vw;
+        margin-left: 17vw;
     }
 
     .ImageIcon {

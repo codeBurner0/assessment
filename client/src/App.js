@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Component/Header'
 import CreateContact from './Component/CreateContact'
-import Cards from './Component/Blogs'
+import Cards from './Component/Cards'
 import {Route,Routes } from 'react-router-dom';
 import Home from './Component/Home'
 import Footer2 from './Component/Footer2'
