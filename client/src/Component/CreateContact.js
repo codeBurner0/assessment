@@ -210,7 +210,7 @@ function CreateContact() {
                     Please! Fill all fields
                   </div>
                 )}
-                {err ? <div className="color_text errortext">{err}+"anki</div> : ''}
+                {err ? <div className="color_text errortext">{err}</div> : ''}
                 <div className="color_text">Choose your color</div>
                 <div
                   className="c_color color1"
