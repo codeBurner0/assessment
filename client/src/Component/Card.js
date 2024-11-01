@@ -5,29 +5,17 @@ import { MdEditSquare, MdDelete } from 'react-icons/md'
 import { useNavigate } from 'react-router-dom'
 import DefaultImage from './images/download.png'
 import { motion } from 'framer-motion'
-function Card({ search }) {
-  const [contact, setContact] = useState([])
+function Card({ search, contacts }) {
   const navigate = useNavigate()
-
-  useEffect(() => {
-    console.log('hii ankit')
-    caller()
-  }, [])
-
-  const caller = async () => {
-    let result = await fetch('https://assessment-zyub.vercel.app/api/contacts')
-    result = await result.json()
-    console.log(result.data, 'ankit')
-    setContact(result.data)
-  }
-
-  console.log(contact, 'hii')
 
   async function Delete(id) {
     console.log(id)
-    let result = await fetch(`https://assessment-zyub.vercel.app/api/contacts/${id}`, {
-      method: 'delete',
-    })
+    let result = await fetch(
+      `https://assessment-zyub.vercel.app/api/contacts/${id}`,
+      {
+        method: 'delete',
+      }
+    )
     navigate(0)
   }
 
@@ -48,7 +36,7 @@ function Card({ search }) {
   }
   return (
     <>
-      {contact
+      {contacts
         .filter((item) => {
           if (search.toLowerCase() === '') return item
 
